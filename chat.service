@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=idle
-WorkingDirectory=/home/q/p/python/socket/chat/
-ExecStart=/usr/bin/python3 /home/q/p/python/socket/chat/server.py
+WorkingDirectory=/home/b0shka/chat/
+ExecStart=/usr/bin/python3 /home/b0shka/chat/server.py
 Restart=always
 
 [Install]
