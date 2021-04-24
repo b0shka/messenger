@@ -1,0 +1,10 @@
+[Desktop Entry]
+
+Version=1.0
+Type=Application
+Categories=System;Utility;
+Terminal=false
+Exec=/media/q/File/p/python/socket/chat/client.bin
+Icon=/media/q/File/p/python/socket/chat/style/icon.png
+Name=Messenger
+Comment=Start messenger

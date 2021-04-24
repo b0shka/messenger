@@ -21,4 +21,4 @@ python3 ./client.py
 ![alt text](style/image.png)
 
 ### Additionally
-A `chat.service` file was also created to run this bot on the server
+A `chat.service` file was also created to run this bot on the server. The `chat.desktop` file contains the code for creating a program shortcut in linux. The file `client.bin` is already a compiled program
