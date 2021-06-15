@@ -17,10 +17,10 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(321, 281)
+        Form.resize(321, 272)
         self.frame = QFrame(Form)
         self.frame.setObjectName(u"frame")
-        self.frame.setGeometry(QRect(0, 10, 321, 271))
+        self.frame.setGeometry(QRect(0, 5, 321, 266))
         self.frame.setStyleSheet(u"QFrame{\n"
 "	border: 2px solid #434965;\n"
 "	border-radius: 7px;\n"
@@ -28,42 +28,20 @@ class Ui_Form(object):
 "}")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
-        self.pushButton = QPushButton(self.frame)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(280, 10, 31, 31))
-        font = QFont()
-        font.setPointSize(11)
-        font.setBold(True)
-        font.setWeight(75)
-        self.pushButton.setFont(font)
-        self.pushButton.setCursor(QCursor(Qt.PointingHandCursor))
-        self.pushButton.setStyleSheet(u"QPushButton{\n"
-"	color: white;\n"
-"	border-radius: 7px;\n"
-"	background-color: #2A2F41;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"	background-color: #50566E;\n"
-"}\n"
-"\n"
-"QPushButton:pressed{\n"
-"	background-color: #434965;\n"
-"}")
         self.label_3 = QLabel(self.frame)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setGeometry(QRect(10, 10, 271, 31))
-        font1 = QFont()
-        font1.setBold(True)
-        font1.setWeight(75)
-        self.label_3.setFont(font1)
+        font = QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_3.setFont(font)
         self.label_3.setStyleSheet(u"color: white;\n"
 "border: none;\n"
 "font-size: 16px;")
         self.listWidget = QListWidget(self.frame)
         self.listWidget.setObjectName(u"listWidget")
-        self.listWidget.setGeometry(QRect(10, 50, 301, 211))
-        self.listWidget.setFont(font1)
+        self.listWidget.setGeometry(QRect(10, 45, 301, 211))
+        self.listWidget.setFont(font)
         self.listWidget.setTabletTracking(False)
         self.listWidget.setAutoFillBackground(False)
         self.listWidget.setStyleSheet(u"QListWidget {\n"
@@ -101,6 +79,29 @@ class Ui_Form(object):
         self.listWidget.setWordWrap(True)
         self.listWidget.setSelectionRectVisible(False)
         self.listWidget.setSortingEnabled(False)
+        self.pushButton = QPushButton(self.frame)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setGeometry(QRect(290, 15, 16, 16))
+        font1 = QFont()
+        font1.setPointSize(11)
+        font1.setBold(True)
+        font1.setWeight(75)
+        self.pushButton.setFont(font1)
+        self.pushButton.setCursor(QCursor(Qt.PointingHandCursor))
+        self.pushButton.setStyleSheet(u"QPushButton{\n"
+"	color: white;\n"
+"	border: none;\n"
+"	background-color: #f73643;\n"
+"	border-radius: 8px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	background-color: #d63a44;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	color: #EA2F4E;\n"
+"}")
 
         self.retranslateUi(Form)
 
@@ -109,7 +110,7 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
-        self.pushButton.setText(QCoreApplication.translate("Form", u"x", None))
         self.label_3.setText(QCoreApplication.translate("Form", u"\u0421\u043f\u0438\u0441\u043e\u043a \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u0439 \u0447\u0430\u0442\u0430", None))
+        self.pushButton.setText("")
     # retranslateUi
 

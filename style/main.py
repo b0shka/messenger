@@ -17,12 +17,18 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(390, 561)
+        MainWindow.resize(361, 546)
+        MainWindow.setMinimumSize(QSize(3, 0))
+        MainWindow.setMaximumSize(QSize(391, 16777215))
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
+        self.centralwidget.setMinimumSize(QSize(391, 546))
+        self.centralwidget.setMaximumSize(QSize(391, 546))
         self.frame = QFrame(self.centralwidget)
         self.frame.setObjectName(u"frame")
-        self.frame.setGeometry(QRect(0, 10, 391, 551))
+        self.frame.setGeometry(QRect(0, 5, 361, 541))
+        self.frame.setMinimumSize(QSize(3, 3))
+        self.frame.setMaximumSize(QSize(3213, 16777215))
         self.frame.setStyleSheet(u"QFrame{\n"
 "	border-radius: 7px;\n"
 "	background-color: #17212B;\n"
@@ -31,7 +37,7 @@ class Ui_MainWindow(object):
         self.frame.setFrameShadow(QFrame.Raised)
         self.lineEdit = QLineEdit(self.frame)
         self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setGeometry(QRect(10, 500, 321, 41))
+        self.lineEdit.setGeometry(QRect(5, 500, 306, 36))
         font = QFont()
         font.setFamily(u"Sans Serif")
         font.setBold(False)
@@ -47,7 +53,7 @@ class Ui_MainWindow(object):
         self.lineEdit.setClearButtonEnabled(True)
         self.pushButton = QPushButton(self.frame)
         self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(340, 500, 41, 41))
+        self.pushButton.setGeometry(QRect(315, 500, 41, 36))
         font1 = QFont()
         font1.setBold(True)
         font1.setWeight(75)
@@ -57,7 +63,7 @@ class Ui_MainWindow(object):
 "	color: white;\n"
 "	border-radius: 7px;\n"
 "	background-color: #595F76;\n"
-"	font-size: 20px;\n"
+"	font-size: 22px;\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
@@ -69,7 +75,7 @@ class Ui_MainWindow(object):
 "}")
         self.listWidget = QListWidget(self.frame)
         self.listWidget.setObjectName(u"listWidget")
-        self.listWidget.setGeometry(QRect(10, 60, 371, 431))
+        self.listWidget.setGeometry(QRect(5, 40, 351, 456))
         font2 = QFont()
         font2.setBold(False)
         font2.setWeight(50)
@@ -113,7 +119,7 @@ class Ui_MainWindow(object):
         self.listWidget.setSortingEnabled(False)
         self.frame_3 = QFrame(self.frame)
         self.frame_3.setObjectName(u"frame_3")
-        self.frame_3.setGeometry(QRect(0, 0, 391, 51))
+        self.frame_3.setGeometry(QRect(0, 0, 361, 36))
         self.frame_3.setStyleSheet(u"QFrame{\n"
 "	border-bottom-left-radius: 0px;\n"
 "	border-bottom-right-radius: 0px;\n"
@@ -121,60 +127,16 @@ class Ui_MainWindow(object):
 "}")
         self.frame_3.setFrameShape(QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QFrame.Raised)
-        self.pushButton_5 = QPushButton(self.frame_3)
-        self.pushButton_5.setObjectName(u"pushButton_5")
-        self.pushButton_5.setGeometry(QRect(350, 10, 31, 31))
-        font3 = QFont()
-        font3.setPointSize(11)
-        font3.setBold(True)
-        font3.setWeight(75)
-        self.pushButton_5.setFont(font3)
-        self.pushButton_5.setCursor(QCursor(Qt.PointingHandCursor))
-        self.pushButton_5.setStyleSheet(u"QPushButton{\n"
-"	color: white;\n"
-"	border: none;\n"
-"	background-color: #2C313C;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"	background-color: #45494D;\n"
-"}\n"
-"\n"
-"QPushButton:pressed{\n"
-"	color: #EA2F4E;\n"
-"}")
-        self.pushButton_4 = QPushButton(self.frame_3)
-        self.pushButton_4.setObjectName(u"pushButton_4")
-        self.pushButton_4.setGeometry(QRect(320, 10, 31, 31))
-        font4 = QFont()
-        font4.setPointSize(10)
-        font4.setBold(True)
-        font4.setWeight(75)
-        self.pushButton_4.setFont(font4)
-        self.pushButton_4.setCursor(QCursor(Qt.PointingHandCursor))
-        self.pushButton_4.setStyleSheet(u"QPushButton{\n"
-"	color: white;\n"
-"	border: none;\n"
-"	background-color: #2C313C;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"	background-color: #45494D;\n"
-"}\n"
-"\n"
-"QPushButton:pressed{\n"
-"	color: #EA2F4E;\n"
-"}")
         self.pushButton_2 = QPushButton(self.frame_3)
         self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setGeometry(QRect(10, 10, 121, 31))
+        self.pushButton_2.setGeometry(QRect(10, 5, 31, 26))
         self.pushButton_2.setFont(font1)
         self.pushButton_2.setCursor(QCursor(Qt.PointingHandCursor))
         self.pushButton_2.setStyleSheet(u"QPushButton{\n"
 "	color: white;\n"
 "	border-radius: 5px;\n"
 "	background-color: #595F76;\n"
-"	font-size: 15px;\n"
+"	font-size: 22px;\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
@@ -186,14 +148,14 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_3 = QPushButton(self.frame_3)
         self.pushButton_3.setObjectName(u"pushButton_3")
-        self.pushButton_3.setGeometry(QRect(140, 10, 141, 31))
+        self.pushButton_3.setGeometry(QRect(50, 5, 136, 26))
         self.pushButton_3.setFont(font1)
         self.pushButton_3.setCursor(QCursor(Qt.PointingHandCursor))
         self.pushButton_3.setStyleSheet(u"QPushButton{\n"
 "	color: white;\n"
 "	border-radius: 5px;\n"
 "	background-color: #595F76;\n"
-"	font-size: 15px;\n"
+"	font-size: 14px;\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
@@ -203,12 +165,51 @@ class Ui_MainWindow(object):
 "QPushButton:pressed{\n"
 "	background-color: #434965;\n"
 "}")
+        self.pushButton_5 = QPushButton(self.frame_3)
+        self.pushButton_5.setObjectName(u"pushButton_5")
+        self.pushButton_5.setGeometry(QRect(335, 10, 16, 16))
+        font3 = QFont()
+        font3.setPointSize(11)
+        font3.setBold(True)
+        font3.setWeight(75)
+        self.pushButton_5.setFont(font3)
+        self.pushButton_5.setCursor(QCursor(Qt.PointingHandCursor))
+        self.pushButton_5.setStyleSheet(u"QPushButton{\n"
+"	color: white;\n"
+"	border: none;\n"
+"	background-color: #f73643;\n"
+"	border-radius: 8px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	background-color: #d63a44;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	color: #EA2F4E;\n"
+"}")
+        self.pushButton_4 = QPushButton(self.frame_3)
+        self.pushButton_4.setObjectName(u"pushButton_4")
+        self.pushButton_4.setGeometry(QRect(310, 10, 16, 16))
+        self.pushButton_4.setFont(font3)
+        self.pushButton_4.setCursor(QCursor(Qt.PointingHandCursor))
+        self.pushButton_4.setStyleSheet(u"QPushButton{\n"
+"	color: white;\n"
+"	border: none;\n"
+"	background-color: #47fc65;\n"
+"	border-radius: 8px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	background-color: #49cc5f;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	color: #EA2F4E;\n"
+"}")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-
-        self.pushButton_4.setDefault(False)
-
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
@@ -217,10 +218,10 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.lineEdit.setText("")
         self.lineEdit.setPlaceholderText("")
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u">", None))
-        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"x", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"_", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"\u27a4", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"\u2699", None))
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0438", None))
+        self.pushButton_5.setText("")
+        self.pushButton_4.setText("")
     # retranslateUi
 

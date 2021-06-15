@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>321</width>
-    <height>281</height>
+    <height>272</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>10</y>
+     <y>5</y>
      <width>321</width>
-     <height>271</height>
+     <height>266</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -35,44 +35,6 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>10</y>
-      <width>31</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
-	color: white;
-	border-radius: 7px;
-	background-color: #2A2F41;
-}
-
-QPushButton:hover{
-	background-color: #50566E;
-}
-
-QPushButton:pressed{
-	background-color: #434965;
-}</string>
-    </property>
-    <property name="text">
-     <string>x</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
@@ -102,7 +64,7 @@ font-size: 16px;</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>50</y>
+      <y>45</y>
       <width>301</width>
       <height>211</height>
      </rect>
@@ -202,6 +164,45 @@ QListWidget::item {
     </property>
     <property name="sortingEnabled">
      <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	border: none;
+	background-color: #f73643;
+	border-radius: 8px;
+}
+
+QPushButton:hover{
+	background-color: #d63a44;
+}
+
+QPushButton:pressed{
+	color: #EA2F4E;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>
