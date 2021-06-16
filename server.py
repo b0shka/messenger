@@ -4,10 +4,10 @@ import socket
 import threading
 import logging
 import pickle
-from cryptography.fernet import Fernet
+import os
+from Crypto.PublicKey import RSA
 
 logging.basicConfig(filename="info.log", format = u'[%(levelname)s] %(asctime)s: %(message)s', level='INFO')
-global logger
 logger = logging.getLogger()
 
 
@@ -39,7 +39,7 @@ class Server:
 
                 self.get_key()
 
-                payload = ['SERVER_INFO', 'Успешное подключение к чату', self.symmetric_key]
+                payload = ['SERVER_INFO', 'Успешное подключение к чату']
                 client.send(pickle.dumps(payload))
                 print(f'{address} - connect the chat')
                 logger.info(f'{address} - connect the chat')
@@ -110,9 +110,21 @@ class Server:
 
     # Генерация ключа шифрования
     def get_key(self) -> None:
-        if self.symmetric_key is None:
-            self.symmetric_key = Fernet.generate_key()
+        if not os.path.exists("crypt_key"):
+            os.mkdir("crypt_key")
+
+        check_key = os.listdir('crypt_key/')
+        if len(check_key) == 0:
+            key = RSA.generate(2048)
+
+            private_key = key.export_key()
+            with open("crypt_key/private.pem", "wb") as file_out:
+                file_out.write(private_key)
+
+            public_key = key.publickey().export_key()
+            with open("crypt_key/public.pem", "wb") as file_out:
+                file_out.write(public_key)
 
 
 if __name__ == "__main__":
-    myserver = Server('127.0.0.1', 9009)
+    myserver = Server('127.0.0.1', 1111)
